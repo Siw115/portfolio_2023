@@ -9,8 +9,8 @@
 }
 
 :root {
-    --bg-color: #558367;
-    --second-bg-color: #63916a;
+    --bg-color: #a899c4;
+    --second-bg-color: #6d517b;
     --text-color: #fff;
     --second-color: #ccc;
     --main-color: #aa00ff;
@@ -188,3 +188,6 @@ section{
     transition: all .45s ease;
 }
 
+.btn2 span i:hover{
+    transform: scale(1.1) translateY(5px);
+}
