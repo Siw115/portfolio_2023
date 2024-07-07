@@ -23,7 +23,7 @@
       <a href="#" class="logo">Portfol<span>i</span>o.</a>
 
       <ul class="navlist">
-        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#aboutme">About me</a></li>
         <li><a href="#services">Service</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
@@ -48,8 +48,8 @@
           that likes to discover all new coding languages.
         </p>
         <div class="button">
-          <a href="#" class="btn">Say Hello</a>
-          <a href="#" class="btn2"
+          <a href="#contact" class="btn">Say Hello</a>
+          <a href="#portfolio" class="btn2"
             ><span><i class="bx bx-play"></i></span>Watch my Work</a
           >
         </div>
@@ -69,7 +69,6 @@
           At the moment I'm planning to do HBO-Informatica, cause I want to further my knowledge and improve my own skillset. 
           I like to experience different coding languages and to learn more about the basics of those languages. 
         </p>
-        <a href="#" class="btn">More About</a>
       </div>
     </section>
 
@@ -127,17 +126,15 @@
         <p>Portfolio</p>
         <h2><span>Latest</span> Projects</h2>
       </div>
-
       <div class="portfolio-content">
         <div class="row">
-          <img src="img/stock-portoflio.jpg" />
+          <img src="img/outside_kreta.jpeg" />
           <div class="layer">
-            <h5>Kreta Voorbrurg</h5>
-            <p>Ik heb een simplistische website gemaakt waarin gebruik heb gemaakt van html/css, bootstrap en php</p>
+            <h5>Kreta Voorburg</h5>
+            <p>A simplistic website made with html/css and php for the restaurant Kreta in Voorburg</p>
             <a href="https://www.kretavoorburg.nl/" target="_blank"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
-
         <div class="row">
           <img src="img/stock-portoflio.jpg" />
           <div class="layer">
@@ -164,8 +161,8 @@
         <h2>Contact <span>Me</span></h2>
         <h4>If you have any questions in your mind</h4>
         <div class="list">
-          <li><a href="#">+06 81169792</a></li>
-          <li><a href="#">siwani1155@gmail.com</a></li>
+          <li><a style="font-weight: bold;" href="tel:0681169792">+06 81169792</a></li>
+          <li><a style="font-weight: bold;" href="mailto:siwani1155@gmail.com">siwani1155@gmail.com</a></li>
         </div>
 
         <div class="contact-icons">
@@ -173,19 +170,18 @@
         </div>
       </div>
       <div class="contact-form">
-        <form action="">
-          <input type="name" placeholder="Your name" required />
-          <input type="email" placeholder="Your Email Adress" required />
-          <input type="" placeholder="Your Mobile Number" required />
+        <form action="https://formspree.io/f/xldrevgw" method="POST">
+          <input type="text" name="name" placeholder="Your name" required pattern="[A-Za-z\s]+" title="Please enter a valid name (letters and spaces only)" />
+          <input type="email" name="email" placeholder="Your Email Address" required />
+          <input type="tel" name="mobile" placeholder="Your Mobile Number" required pattern="\d{10}" title="Please enter a valid 10-digit mobile number" />
           <textarea
-            name=""
-            id=""
+            name="message"
             cols="35"
             rows="10"
             placeholder="How can I help you"
             required
           ></textarea>
-          <input type="submit" value="Send Message" class="submit" required />
+          <input type="submit" value="Send Message" class="submit" />
         </form>
       </div>
     </section>

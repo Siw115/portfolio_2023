@@ -9,11 +9,11 @@
 }
 
 :root {
-  --bg-color: #a899c4;
-  --second-bg-color: #486d9b;
+  --bg-color: #6272cc;
+  --second-bg-color: #5c3573;
   --text-color: #fff;
-  --second-color: #ccc;
-  --main-color: #aa00ff;
+  --second-color: white;
+  --main-color: #0e0651;
   --big-font: 5rem;
   --h2-font: 3rem;
   --p-font: 1.1rem;
@@ -255,7 +255,7 @@ header.sticky {
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   align-items: center;
   gap: 2.5rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .box {
@@ -311,7 +311,7 @@ header.sticky {
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   align-items: center;
   gap: 2.5rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .row {
@@ -331,7 +331,7 @@ header.sticky {
 .layer {
   width: 100%;
   height: 0%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), #232af4);
+  background: linear-gradient(rgba(43, 31, 99, 0.1), #696cbe);
   position: absolute;
   border-radius: 8px;
   left: 0;
@@ -342,7 +342,7 @@ header.sticky {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 40px;
+  padding: 0 10px;
   transition: height 0.5s;
 }
 
@@ -356,6 +356,7 @@ header.sticky {
   color: var(--second-color);
   font-size: 1rem;
   line-height: 1.8;
+  font-weight: bold;
 }
 
 .layer i {
@@ -479,6 +480,12 @@ form textarea {
 .contact-form .submit:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #000000;
+  opacity: 1;
 }
 
 .end {
